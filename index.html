@@ -153,7 +153,7 @@
 							<div class="col-lg-3  md-text-right">
 								
 								<!-- btn -->
-								<a class="btn btn-outline" href="#">Get a quote
+								<a class="btn btn-outline" href="#id7">Get a quote
 								</a><!-- End / btn -->
 								
 							</div>
@@ -777,29 +777,29 @@
 								<div class="main-content">
 									<div class="row"> 
 										<div class="col-lg-6 ">
-											<form class="contact-form">
+											<form class="contact-form" method="post" action="contact.php">
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="name"/>
+													<input class="form-control" type="text" name="name" placeholder="name"/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="email"/>
+													<input class="form-control" type="text" name="email" placeholder="email"/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="phone"/>
+													<input class="form-control" type="text" name="phone" placeholder="phone"/>
 												</div><!-- End / form-item -->
 												
 												
 												<!-- form-item -->
 												<div class="form-item">
-													<input class="form-control" type="text" name="input" placeholder="subject"/>
+													<input class="form-control" type="text" name="subject" placeholder="subject"/>
 												</div><!-- End / form-item -->
 												
 												
@@ -812,7 +812,7 @@
 											</form>
 										</div>
 										<div class="col-lg-6 ">
-											<div class="contact-gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13251.372477946246!2d151.20128974429977!3d-33.86793372362399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2s!4v1450842593491" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+											<div class="contact-gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.8906931078274!2d30.055536269457733!3d-1.9266709998784763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwNTUnMzYuMCJTIDMwwrAwMycyMi4zIkU!5e0!3m2!1sen!2srw!4v1706459180389!5m2!1sen!2srw" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 										</div>
 									</div>
 								</div>
@@ -833,7 +833,7 @@
 										<!--  -->
 										<div>
 											<div class="widget-contact__item"><span class="widget-contact__title">Tel:</span>
-												<p class="widget-contact__text">+44 1632 960422</p>
+												<p class="widget-contact__text">+250 793 895 887</p>
 											</div>
 											<div class="widget-contact__item"><span class="widget-contact__title">email:</span>
 												<p class="widget-contact__text"><a href="#">info@awe7.com</a></p>
@@ -934,7 +934,7 @@
 									<!--  -->
 									<div>
 										<div class="widget-contact__item"><span class="widget-contact__title">Tel:</span>
-											<p class="widget-contact__text">+44 1632 960948</p>
+											<p class="widget-contact__text">+250 793 895 887</p>
 										</div>
 										<div class="widget-contact__item"><span class="widget-contact__title">email:</span>
 											<p class="widget-contact__text"><a href="#">info@awe7.com</a></p>
@@ -954,13 +954,30 @@
 				<!-- copyright-01 -->
 				<div class="copyright-01 md-text-center">
 					<div class="container">
-						<p class="copyright-01__copy">2018 &copy; Copyright Awe7. All rights Reserved.</p>
+						<p class="copyright-01__copy"><span id="datetime"></span> &copy; Copyright Circle C. All rights Reserved.</p>
 					</div>
 				</div><!-- End / copyright-01 -->
 				
 			</footer><!-- End / footer-01 -->
 			
 		</div>
+		<script>
+			// create a function to update the date and time
+			function updateDateTime() {
+			  // create a new `Date` object
+			  const now = new Date();
+			  
+			  // get the current date and time as a string
+			//   const currentDateTime = now.toLocaleString();
+			  const currentDateTime = now.toDateString();
+	  
+			  // update the `textContent` property of the `span` element with the `id` of `datetime`
+			  document.querySelector('#datetime').textContent = currentDateTime;
+			}
+	  
+			// call the `updateDateTime` function every second
+			setInterval(updateDateTime, 1000);
+		  </script>
 		<!-- Vendors-->
 		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
