@@ -68,7 +68,9 @@
 }
 
 .team__img img {
-    object-fit: contain; /* This will ensure that the entire image is visible */
+    height: 100%; /* This will make the image height equal to the height of its parent div */
+    width: auto; /* This will maintain the aspect ratio of the images */
+    object-fit:fill; /* This will ensure that the entire image is visible */
 }
 
 a[disabled], input[disabled], button[disabled], textarea[disabled] {
