@@ -64,6 +64,7 @@
 .team__img {
     height: 40vh; /* You can adjust this value as per your requirement */
     width: auto; /* This will maintain the aspect ratio of the images */
+    object-fit: contain;
 }
 
 a[disabled], input[disabled], button[disabled], textarea[disabled] {
