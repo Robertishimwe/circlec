@@ -1695,23 +1695,33 @@ mark, .mark {
 --------------------------------------------------------------------------------*/
 
 .services {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     background-color: #fff;
-    padding: 15px;
+    padding: 10px;
 }
 
 .services__title {
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
-    margin: 20px 0 7px;
+    margin: 10px 0 7px;
 }
 
 .services__title:hover {
     color: #9abb50;
 }
 
+.services__title1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 10px 0 7px;
+}
+
+.services__title1:hover {
+    color: #9abb50;
+}
+
 .services__img {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .services__desc {
@@ -3512,6 +3522,9 @@ mark, .mark {
 
 /* 36. header_01
 --------------------------------------------------------------------------------*/
+.hero {
+    height: 50vh;
+}
 
 .hero .swiper-button-custom {
     display: none;
