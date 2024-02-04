@@ -1721,7 +1721,13 @@ mark, .mark {
 }
 
 .services__img {
+    height: 24vh;
     margin-bottom: 10px;
+}
+
+.services__img img{
+    height: 100%;
+    object-fit:fill;
 }
 
 .services__desc {
