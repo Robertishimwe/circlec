@@ -61,6 +61,9 @@
 
 /* 1. base
 --------------------------------------------------------------------------------*/
+@tailwind components;
+@tailwind utilities;
+
 .team__img {
     height: 40vh; /* You can adjust this value as per your requirement */
     width: auto; /* This will maintain the aspect ratio of the images */
@@ -72,6 +75,48 @@
     width: auto; /* This will maintain the aspect ratio of the images */
     object-fit:fill; /* This will ensure that the entire image is visible */
 }
+
+/* Styles for the container */
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 16px;
+  }
+  
+  /* Styles for the social links */
+  .social-links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* Styles for the social icons */
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    fill: #9abb50;
+    transition: fill 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    fill: #828282;
+  }
+  
+  /* Styles for the phone icon */
+  .phone-icon {
+    width: 24px;
+    height: 24px;
+    fill: #9abb50;
+    margin-right: 8px;
+  }
+  
+  /* Styles for the phone number */
+  .phone-number {
+    color: #9abb50;
+  }
+  
 
 a[disabled], input[disabled], button[disabled], textarea[disabled] {
     cursor: not-allowed !important;
@@ -1721,7 +1766,14 @@ mark, .mark {
 }
 
 .services__img {
+    height: 24vh;
     margin-bottom: 10px;
+}
+
+.services__img img{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
 }
 
 .services__desc {
