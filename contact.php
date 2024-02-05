@@ -26,12 +26,12 @@ $email_subject = "User Contacting us";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
     
-$to = "robertishimwe0@gmail.com";//<== update the email address
+$to = "shemsonex@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$headers);
-header('Location: index.html');
+if(mail($to,$email_subject,$email_body,$headers)){echo 'sent';}else{echo 'Not Sent';}
+// header('Location: index.html');
 
 
 // Function to validate against any email injection attempts
