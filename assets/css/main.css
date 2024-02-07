@@ -70,6 +70,18 @@
     object-fit: contain;
 }
 
+.team__img6 {
+    height: 30vh; /* You can adjust this value as per your requirement */
+    width: auto; /* This will maintain the aspect ratio of the images */
+    object-fit: contain;
+}
+
+.team__img6 img {
+    height: 100%; /* This will make the image height equal to the height of its parent div */
+    width: auto; /* This will maintain the aspect ratio of the images */
+    object-fit:fill; /* This will ensure that the entire image is visible */
+}
+
 .team__img img {
     height: 100%; /* This will make the image height equal to the height of its parent div */
     width: auto; /* This will maintain the aspect ratio of the images */
