@@ -30,8 +30,8 @@ $to = "shemsonex@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$headers);
-header('Location: index.html');
+if(mail($to,$email_subject,$email_body,$headers)){echo 'sent';}else{echo 'Not Sent';}
+// header('Location: index.html');
 
 
 // Function to validate against any email injection attempts
