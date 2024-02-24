@@ -64,6 +64,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.organizational {
+    /* height: 40vh; You can adjust this value as per your requirement */
+    /* width: 37.5vh; This will maintain the aspect ratio of the images */
+    object-fit: cover;
+}
+
 .team__img {
     height: 40vh; /* You can adjust this value as per your requirement */
     width: 37.5vh; /* This will maintain the aspect ratio of the images */
@@ -351,6 +357,11 @@ a:focus {
 ::selection {
     color: #fff;
     background-color: #9abb50;
+}
+
+.md-section-organization {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .md-section {
@@ -2517,6 +2528,10 @@ mark, .mark {
 
 /* 18. sec_title
 --------------------------------------------------------------------------------*/
+
+.sec-title-organization {
+    margin-bottom: 10px;
+}
 
 .sec-title {
     margin-bottom: 30px;
