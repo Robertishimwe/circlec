@@ -646,18 +646,18 @@ mark, .mark {
 
     .about .about-quote {
         position: relative;
-        bottom: 50px;
-        right: -130px;
+        bottom: 0px;
+        right: -75px;
         float: right;
-        opacity: .85;
+        opacity: .80;
     }
 }
 
 @media (min-width: 993px) and (min-width: 481px) {
     .about .about-quote {
         position: absolute;
-        right: -130px;
-        bottom: -30px;
+        right: -75px;
+        bottom: 55px;
         float: none;
     }
 }
@@ -1646,7 +1646,7 @@ mark, .mark {
     max-width: 300px;
     background-color: #9abb50;
     border: 5px solid #fff;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     box-shadow: 0 0 5px rgba(68, 68, 68, .6);
 }
