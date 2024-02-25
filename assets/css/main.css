@@ -647,7 +647,7 @@ mark, .mark {
     .about .about-quote {
         position: relative;
         bottom: 50px;
-        right: -30px;
+        right: -130px;
         float: right;
         opacity: .85;
     }
@@ -656,7 +656,7 @@ mark, .mark {
 @media (min-width: 993px) and (min-width: 481px) {
     .about .about-quote {
         position: absolute;
-        right: -30px;
+        right: -130px;
         bottom: -30px;
         float: none;
     }
