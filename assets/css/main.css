@@ -64,28 +64,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.organizational {
+    /* height: 40vh; You can adjust this value as per your requirement */
+    /* width: 37.5vh; This will maintain the aspect ratio of the images */
+    object-fit: cover;
+}
+
 .team__img {
     height: 40vh; /* You can adjust this value as per your requirement */
     width: 37.5vh; /* This will maintain the aspect ratio of the images */
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .team__img6 {
     height: 30vh; /* You can adjust this value as per your requirement */
     width: auto; /* This will maintain the aspect ratio of the images */
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .team__img6 img {
     height: 100%; /* This will make the image height equal to the height of its parent div */
     width: auto; /* This will maintain the aspect ratio of the images */
-    object-fit:fill; /* This will ensure that the entire image is visible */
+    object-fit:cover; /* This will ensure that the entire image is visible */
 }
 
 .team__img img {
     height: 100%; /* This will make the image height equal to the height of its parent div */
     width: 37.5vh; /* This will maintain the aspect ratio of the images */
-    object-fit:fill; /* This will ensure that the entire image is visible */
+    object-fit:cover; /* This will ensure that the entire image is visible */
 }
 
 /* Styles for the container */
@@ -351,6 +357,11 @@ a:focus {
 ::selection {
     color: #fff;
     background-color: #9abb50;
+}
+
+.md-section-organization {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .md-section {
@@ -635,18 +646,18 @@ mark, .mark {
 
     .about .about-quote {
         position: relative;
-        bottom: 50px;
-        right: -30px;
+        bottom: 0px;
+        right: -75px;
         float: right;
-        opacity: .85;
+        opacity: .80;
     }
 }
 
 @media (min-width: 993px) and (min-width: 481px) {
     .about .about-quote {
         position: absolute;
-        right: -30px;
-        bottom: -30px;
+        right: -75px;
+        bottom: 55px;
         float: none;
     }
 }
@@ -1635,7 +1646,7 @@ mark, .mark {
     max-width: 300px;
     background-color: #9abb50;
     border: 5px solid #fff;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     box-shadow: 0 0 5px rgba(68, 68, 68, .6);
 }
@@ -2517,6 +2528,10 @@ mark, .mark {
 
 /* 18. sec_title
 --------------------------------------------------------------------------------*/
+
+.sec-title-organization {
+    margin-bottom: 10px;
+}
 
 .sec-title {
     margin-bottom: 30px;
