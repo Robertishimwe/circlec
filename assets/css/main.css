@@ -619,7 +619,13 @@ mark, .mark {
     background-color: #245269;
 }
 
+.btn-inline-gallery {    
+    font-weight: bold;
+}
 
+.btn-inline-gallery:hover {
+    background-color: #a5ce4e;
+}
 /* 4. about
 --------------------------------------------------------------------------------*/
 .header-logo img{
@@ -770,7 +776,19 @@ mark, .mark {
 
 .cta-02 {
     background-color: #9abb50;
-    padding: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    /* border:1px solid #f00; */
+    flex-direction: row;
+    /* margin-right: 10px;  */
+}
+
+#cta-02 {
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .cta-02__title {

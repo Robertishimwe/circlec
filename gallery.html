@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Circle C</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <link rel="icon" href="assets/img/headlogo.png" type="image/x-icon"> -->
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href="assets/img/headlogos.png" type="image/x-icon" />
+	<!-- Fonts-->
+	<link href="bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+	<!-- Vendors-->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+	<!-- App & fonts-->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style type="text/tailwindcss">
+		@layer utilities {
+			  .content-auto {
+				content-visibility: auto;
+			  }
+			}
+		  </style>
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<!-- preload -->
+	<div class="preload" id="preload">
+		<div class="cssload-spin-box"></div>
+	</div><!-- End / preload -->
+
+	<div class="page-wrap">
+
+		<!-- header -->
+		<header class="header header-fixheight header--fixed">
+
+			<div class="flex items-center justify-between bg-black text-white p-4">
+				<div class="flex gap-4"><a class="text-[#9abb50] hover:text-[#828282]"
+						href="https://www.facebook.com/profile.php?id=61556072314763&mibextid=rS40aB7S9Ucbxw6v"><svg
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="h-6 w-6">
+							<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+						</svg><span class="sr-only">Facebook</span></a> <a class="text-[#9abb50] hover:text-[#828282]" href="https://www.twitter.com/circlec_rw">
+							
+							<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" width="24" height="24" viewBox="0 0 512 462.799">
+								<path fill="#9abb50" fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/>
+							</svg>
+							
+
+						<span class="sr-only">Twitter</span>
+					</a><a class="text-[#9abb50] hover:text-[#828282]" href="https://Instagram.com/circlec.rw"><svg
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="h-6 w-6">
+							<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+							<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+						</svg><span class="sr-only">Instagram</span></a>
+						<a class="text-[#9abb50] hover:text-[#828282]" href="https://www.linkedin.com/in/circle-c-rwanda-6ba0852b5"><svg fill="#9abb50" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.959 45.959" xml:space="preserve" stroke="#9abb50" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M5.392,0.492C2.268,0.492,0,2.647,0,5.614c0,2.966,2.223,5.119,5.284,5.119c1.588,0,2.956-0.515,3.957-1.489 c0.96-0.935,1.489-2.224,1.488-3.653C10.659,2.589,8.464,0.492,5.392,0.492z M7.847,7.811C7.227,8.414,6.34,8.733,5.284,8.733 C3.351,8.733,2,7.451,2,5.614c0-1.867,1.363-3.122,3.392-3.122c1.983,0,3.293,1.235,3.338,3.123 C8.729,6.477,8.416,7.256,7.847,7.811z"></path> <path d="M0.959,45.467h8.988V12.422H0.959V45.467z M2.959,14.422h4.988v29.044H2.959V14.422z"></path> <path d="M33.648,12.422c-4.168,0-6.72,1.439-8.198,2.792l-0.281-2.792H15v33.044h9.959V28.099c0-0.748,0.303-2.301,0.493-2.711 c1.203-2.591,2.826-2.591,5.284-2.591c2.831,0,5.223,2.655,5.223,5.797v16.874h10v-18.67 C45.959,16.92,39.577,12.422,33.648,12.422z M43.959,43.467h-6V28.593c0-4.227-3.308-7.797-7.223-7.797 c-2.512,0-5.358,0-7.099,3.75c-0.359,0.775-0.679,2.632-0.679,3.553v15.368H17V14.422h6.36l0.408,4.044h1.639l0.293-0.473 c0.667-1.074,2.776-3.572,7.948-3.572c4.966,0,10.311,3.872,10.311,12.374V43.467z"></path> </g> </g> </g></svg><span class="sr-only">linkedin</span></a>
+					</div><!--<a href="index_a.html">Change to Arabic</a>-->
+				<div class="text-[#9abb50]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="h-6 w-6 inline-block mr-2">
+						<path
+							d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+						</path>
+					</svg><span>+250 739 668 601, +250 793 895 887</span></div>					
+			</div>
+			<div class="container">
+				<div class="header__inner">
+					<div class="header-logo"><a href="index.html"><img src="assets/img/logo.png" alt="" /></a></div>
+
+					<!-- raising-nav -->
+					<nav class="raising-nav">
+
+						<!-- raising-menu -->
+						<ul class="raising-menu">
+							<li class="current"><a href="index.html">Home</a>
+							</li>
+							<li><a href="index.html#id2">About</a>
+							</li>
+							<li><a href="organigram.html">Our Structure</a>
+							</li>
+							<li><a href="index.html#id3">service</a>
+							</li>
+							<li><a href="index.html#id4">gallery</a>
+							</li>
+							<li><a href="index.html#id5">testimonial</a>
+							</li>
+							<li><a href="index.html#id6">team</a>
+							</li>
+							<li><a href="index.html#id7">contact us</a>
+							</li>
+							
+						</ul><!-- raising-menu -->
+
+						<div class="navbar-toggle"><i class="fa fa-bars"></i></div>
+					</nav><!-- End / raising-nav -->
+
+					<!-- <div class="btn-right">
+							<div class="search-btn"><i class="fa fa-search"></i></div>
+						</div>
+						<div class="searchbar">
+							<div class="searchbar__group"><span class="searchbar__addon"><i class="fa fa-search"></i></span>
+								<input class="searchbar__input" type="text" name="search" value="" placeholder="Search"/><span class="searchbar__close"></span>
+							</div>
+						</div> -->
+				</div>
+			</div>
+		</header><!-- End / header -->
+
+		<!-- Content-->
+		<div class="md-content">
+
+			
+
+
+			<!-- cta-02 -->
+			<div class="cta-02" id="cta-02">
+				<div class="container">
+					<div class="row" style="text-align: center;">
+						<!-- <div class="col-lg-3"> -->
+
+							<!-- btn -->
+							<button class="btn btn-inline-gallery" onclick="abc('rwanda')">Projects in Rwanda</button>
+							<!-- <a class="btn btn-inline-gallery" onclick="abc('rwanda')">Projects in Rwanda</a> -->
+							<a class="btn btn-inline-gallery" onclick="abc('sudan')">Projects in Sudan</a>
+							<a class="btn btn-inline-gallery" onclick="abc('our-projects')">Our Designs</a>
+							<!-- End / btn -->
+
+						<!-- </div> -->
+					</div>
+				</div>
+			</div><!-- End / cta-02 -->
+
+
+			
+
+
+			<!-- Section -->
+			<section class="md-section" id="id4" style="background-color:#fff;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 ">
+
+							<!-- sec-title -->
+							<div class="sec-title sec-title__lg-title md-text-center">
+								<h2 class="sec-title__title">Gallery</h2><span class="sec-title__divider"></span>
+							</div><!-- End / sec-title -->
+
+						</div>
+					</div>
+
+					<!-- gallery-wrap -->
+					<div class="gallery-wrap gallery-album" id="gallery-rwanda">
+						<div class="grid-css grid-css--grid" data-col-lg="4" data-col-md="2" data-col-sm="2"
+							data-col-xs="1" data-gap="30">
+							<div class="grid__inner">
+								<div class="grid-sizer"></div>
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg" alt="How to Create and" />
+														<!-- <div class="text-white">Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]<br>
+														26 Towers, 6 Floor each</div> -->
+														<!-- <span class="text-white">Car check Khartoum north (Sudan) [Jun 2019 - July 2020]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Car check Khartoum north (Sudan) [Jun 2019 - July 2020]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg" alt="How to Master" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															26 Towers, 6 Floor each<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														26 Towers, 6 Floor each">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg" alt="7 UI Choices That" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0010.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0010.jpg" alt="How To Build A" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0010.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0011.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0011.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0011.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0012.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0012.jpg" alt="Is UX Really That" />
+														<!-- <span class="text-white">General directorate for mining police - Khartoum north <br>[Aug 2021 - Jul 2022]<br>
+															<i>(Supervision)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0012.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north [Aug 2021 - Jul 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0013.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0013.jpg" alt="Getting Started with" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0013.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north (Sudan) [2020-2022] ((Supervision))">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0014.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0014.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0014.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0015.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0015.jpg" alt="Using Memes in Your" />
+														<!-- <span style="color:black;" class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0015.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0020.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0020.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0020.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0021.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0021.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0021.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0022.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0022.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0022.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0023.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0023.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0023.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->								
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0024.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0024.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0024.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0025.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0025.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0025.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0026.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0026.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0026.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0027.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0027.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0027.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Rwanda/IMG-20250307-WA0028.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Rwanda/IMG-20250307-WA0028.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Rwanda/IMG-20250307-WA0028.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+							</div>
+						</div>
+					</div><!-- End / gallery-wrap -->
+
+					<!-- gallery-wrap -->
+					<div class="gallery-wrap gallery-album" id="gallery-sudan">
+						<div class="grid-css grid-css--grid" data-col-lg="4" data-col-md="2" data-col-sm="2"
+							data-col-xs="1" data-gap="30">
+							<div class="grid__inner">
+								<div class="grid-sizer"></div>
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" alt="How to Create and" />
+														<!-- <div class="text-white">Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]<br>
+														26 Towers, 6 Floor each</div> -->
+														<!-- <span class="text-white">Car check Khartoum north (Sudan) [Jun 2019 - July 2020]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Car check Khartoum north (Sudan) [Jun 2019 - July 2020]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" alt="How to Master" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															26 Towers, 6 Floor each<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														26 Towers, 6 Floor each">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" alt="7 UI Choices That" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg" alt="How To Build A" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg" alt="Is UX Really That" />
+														<!-- <span class="text-white">General directorate for mining police - Khartoum north <br>[Aug 2021 - Jul 2022]<br>
+															<i>(Supervision)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north [Aug 2021 - Jul 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg" alt="Getting Started with" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north (Sudan) [2020-2022] ((Supervision))">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg" alt="Using Memes in Your" />
+														<!-- <span style="color:black;" class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->								
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+							</div>
+						</div>
+					</div><!-- End / gallery-wrap -->
+
+					<!-- gallery-wrap -->
+					<div class="gallery-wrap gallery-album" id="our-projects">
+						<div class="grid-css grid-css--grid" data-col-lg="4" data-col-md="2" data-col-sm="2"
+							data-col-xs="1" data-gap="30">
+							<div class="grid__inner">
+								<div class="grid-sizer"></div>
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" alt="How to Create and" />
+														<!-- <div class="text-white">Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]<br>
+														26 Towers, 6 Floor each</div> -->
+														<!-- <span class="text-white">Car check Khartoum north (Sudan) [Jun 2019 - July 2020]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Car check Khartoum north (Sudan) [Jun 2019 - July 2020]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" alt="How to Master" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															26 Towers, 6 Floor each<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														26 Towers, 6 Floor each">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" alt="7 UI Choices That" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]</span> -->
+														<a class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="kindergarten Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg" alt="How To Build A" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0010.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0011.jpg" data-effect="mfp-zoom-in"
+														title="Kobar residential complex Khartoum north (Sudan) [Sep 2020 - Oct 2022]
+														(Structural Design and Construction Management)">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg" alt="Is UX Really That" />
+														<!-- <span class="text-white">General directorate for mining police - Khartoum north <br>[Aug 2021 - Jul 2022]<br>
+															<i>(Supervision)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0012.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north [Aug 2021 - Jul 2022]">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+
+								<!-- grid-item -->
+								<div class="grid-item wide">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg" alt="Getting Started with" />
+														<!-- <span class="text-white">Kobar residential complex Khartoum north (Sudan) <br>[Sep 2020 - Oct 2022]<br>
+															<i>(Structural Design and Construction Management)</i></span> -->
+															<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0013.jpg" data-effect="mfp-zoom-in"
+														title="General directorate for mining police - Khartoum north (Sudan) [2020-2022] ((Supervision))">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0014.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg" alt="Using Memes in Your" />
+														<!-- <span style="color:black;" class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0015.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0016.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0017.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0018.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0019.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0020.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0021.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0022.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0023.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->								
+								<!-- grid-item -->
+								<div class="grid-item large">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0024.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0025.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0026.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0027.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+								<!-- grid-item -->
+								<div class="grid-item">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+
+											<!-- gallery -->
+											<div class="gallery gallery--grid">
+												<div class="gallery__image bg-image text-center"
+													style="background-image: url(assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg);"><img loading="lazy"
+														src="assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg" alt="Using Memes in Your" />
+														<!-- <span class="text-white" style="color:black;">Design of Villa Juba(South Sudan) Client by ENG. Natali John</span> -->
+														<a	class="gallery__overlay mfp-image"
+														href="assets/img/gallery/Sudan/IMG-20250307-WA0028.jpg" data-effect="mfp-zoom-in"
+														title="Design of Villa Juba(South Sudan) Client by ENG. Natali John">
+														<div class="md-tb">
+															<div class="md-tb__cell md-text-center"><i
+																	class="fa fa-search"></i></div>
+														</div>
+													</a>
+												</div>
+											</div><!-- End / gallery -->
+
+										</div>
+									</div>
+								</div><!-- End / grid-item -->
+
+							</div>
+						</div>
+					</div><!-- End / gallery-wrap -->
+
+				</div>
+			</section>
+			<!-- End / Section -->			
+		</div>
+		<!-- End / Content-->
+
+		<!-- footer-01 -->
+		<footer class="footer-01 md-skin-dark">
+			<div class="footer-01__widget">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-3 ">
+
+							<!-- widget -->
+							<section class="widget">
+
+								<!-- sec-title -->
+								<div class="sec-title">
+									<h2 class="sec-title__title">Our Vision</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+
+								<p> We aspire to be a distinguished company at the local level by providing integrated
+									services that conform to specifications and quality standards in the contracting
+									industry.</p>
+							</section><!-- End / widget -->
+
+						</div>
+						<div class="col-md-6 col-lg-3">
+
+							<!-- widget -->
+							<section class="widget">
+
+								<!-- sec-title -->
+								<div class="sec-title">
+									<h2 class="sec-title__title">Our Services</h2><span
+										class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+
+
+								<!-- widget-tag -->
+								<!-- <div class = "container">
+										<h2>Technologies (Unstyled)</h2>
+										<ul class = "list-styled">
+										   <li><a href = "#">Home</a></li>
+										   <li><a href = "#">PHP</a></li>
+										   <li><a href = "#">Java</a></li>
+										   <li><a href = "#">jQuery</a></li>
+										   <li><a href = "#">JavaScript</a></li>
+										   <li><a href = "#">Ruby</a></li>
+										</ul>
+									 </div> -->
+								<div class="widget-tag">
+									<a>Construction of Homes</a>
+									<a>Office Renovation</a>
+									<a>Bathroom Remodeling</a>
+									<a>Plumbing</a>
+									<a>Electrical Works</a>
+									<a>Masonry</a>
+									<a>Tiling</a>
+									<a>Waterproofing Roof</a>
+									<a>Welding</a>
+									<a>Roof Construction</a>
+									<a>Drywall Partitioning</a>
+									<a>Installation of Fixtures and Appliances</a>
+									<!-- <a href="#">Food</a> -->
+								</div><!-- End /  widget-tag -->
+
+							</section><!-- End / widget -->
+
+						</div>
+						<div class="col-lg-3 ">
+
+							<!-- widget -->
+							<section class="widget">
+
+								<!-- sec-title -->
+								<div class="sec-title">
+									<h2 class="sec-title__title">working hours</h2><span
+										class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+
+								<!-- <p> Lorem ipsum dolor sit amet, consectetur</p> -->
+
+								<!--  -->
+								<div>
+									<div class="widget-contact__item"><span class="widget-contact__title">Tel:</span>
+										<p class="widget-contact__text">+250 739 668 601, +250 793 895 887</p>
+									</div>
+									<div class="widget-contact__item"><span class="widget-contact__title">email
+											1:</span>
+										<p class="widget-contact__text"><a href="#">info@circlec.rw</a></p>
+									</div>
+									<div class="widget-contact__item"><span class="widget-contact__title">email
+											2:</span>
+										<p class="widget-contact__text"><a href="#">mustafa@circlec.rw</a></p>
+									</div>
+									<div class="widget-contact__item"><span class="widget-contact__title">Working
+											Hours</span>
+										<p class="widget-contact__text">Mon - Sat: 9:00 - 18:00</p>
+									</div>
+								</div><!-- End /   -->
+
+							</section><!-- End / widget -->
+
+						</div>
+						<div class="col-md-6 col-lg-3 ">
+
+							<!-- widget -->
+							<section class="widget">
+
+								<!-- sec-title -->
+								<div class="sec-title">
+									<h2 class="sec-title__title">QR Code</h2><span class="sec-title__divider"></span>
+								</div><!-- End / sec-title -->
+
+
+								<!-- widget-gallery -->
+								<div class="widget-gallery">
+									<div class="team__img6"><img src="assets/img/circlec/qr.jpeg" alt="Qr Code" />
+
+									</div>
+									<!-- <div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div>
+										<div class="widget-gallery__item"><a href="#" style="background-image: url('http://placehold.it/400x400');"><img src="http://placehold.it/400x400" alt=""/></a></div> -->
+								</div><!-- End /  widget-gallery -->
+
+							</section>
+							<!-- End / widget -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- copyright-01 -->
+			<div class="copyright-01 md-text-center">
+				<div class="container">
+					<p class="copyright-01__copy"><span id="datetime"></span> &copy; Copyright Circle C. All rights
+						Reserved.</p>
+				</div>
+			</div><!-- End / copyright-01 -->
+
+		</footer><!-- End / footer-01 -->
+
+	</div>
+	<script>
+		function abc(project) {
+			// alert(project);
+			// // Hide all gallery divs
+			// document.getElementById('gallery-rwanda').style.display = 'none';
+			// document.getElementById('gallery-sudan').style.display = 'none';
+			// document.getElementById('our-projects').style.display = 'none';
+	
+			// Show the selected gallery div
+			if (project === 'rwanda') {
+				document.getElementById('gallery-rwanda').style.display = 'block';
+				document.getElementById('gallery-sudan').style.display = 'none';
+				document.getElementById('our-projects').style.display = 'none';
+			} else if (project === 'sudan') {
+				document.getElementById('gallery-sudan').style.display = 'block';
+				document.getElementById('gallery-rwanda').style.display = 'none';
+				document.getElementById('our-projects').style.display = 'none';
+			} else if (project === 'our-projects') {
+				document.getElementById('our-projects').style.display = 'block';
+				document.getElementById('gallery-sudan').style.display = 'none';
+				document.getElementById('gallery-rwanda').style.display = 'none';
+			}
+		}
+	</script>
+	<script>
+		// create a function to update the date and time
+		function updateDateTime() {
+			// create a new `Date` object
+			const now = new Date();
+
+			// get the current date and time as a string
+			//   const currentDateTime = now.toLocaleString();
+			const currentDateTime = now.toDateString();
+
+			// update the `textContent` property of the `span` element with the `id` of `datetime`
+			document.querySelector('#datetime').textContent = currentDateTime;
+		}
+
+		// call the `updateDateTime` function every second
+		setInterval(updateDateTime, 1000);
+	</script>
+	<!-- Vendors-->
+	<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.js"></script>
+	<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+	<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+	<!-- App-->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
